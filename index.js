@@ -109,4 +109,4 @@ app.group('/api/v1', router => {
   );
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}!`));
+app.listen(process.env.PORT||9876, function(){ console.log(`Listening on port port!`)});
