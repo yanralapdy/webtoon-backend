@@ -29,7 +29,7 @@ app.group('/api/v1', router => {
   //webtoons
   router.get('/webtoons/', TodoController.showAllToon);
   router.get('/webtoon', TodoController.findToonTitle);
-  router.get('/webtoonfav/:id', TodoController.showFavourite);
+  router.get('/webtoonfav', TodoController.showFavourite);
   router.get('/webtoon/:id/episodes', TodoController.showEpisode);
   router.get('/webtoon/:idWt/episode/:idEp', TodoController.showEpImage);
   //
