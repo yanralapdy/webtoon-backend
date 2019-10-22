@@ -99,7 +99,9 @@ exports.showFavourite = async (req, res) => {
         attributes: ['name'],
       },
     ],
-  });
+  }).catch(res.send({
+    message: 'file not exist'
+  }))
   res.send(fav);
 };
 
