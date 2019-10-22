@@ -85,7 +85,7 @@ exports.showEpImage = (req, res) => {
 //Showing all
 exports.showFavourite = async (req, res) => {
   const fav = await favourite.findAll({
-    where: {user: req.query.id},
+    // where: {user: req.query.id},
     attributes: ['createdAt', 'updatedAt'],
     include: [
       {
