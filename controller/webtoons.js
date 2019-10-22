@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const webtoons = models.webtoons;
 const users = models.users;
-const favourite = models.favourites;
+const favourites = models.favourites;
 const episodes = models.episodes;
 const images = models.images;
 
@@ -99,10 +99,7 @@ exports.showFavourite = async (req, res) => {
         attributes: ['name'],
       },
     ],
-  }).catch(res.send({
-    data: fav,
-    message: 'file not exist'
-  }))
+  });
   res.send(fav);
 };
 
