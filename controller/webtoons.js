@@ -84,7 +84,7 @@ exports.showEpImage = (req, res) => {
 //Favourite
 //Showing all
 exports.showFavourite = async (req, res) => {
-  const fav = await favourite.findAll({
+  const fav = await favourites.findAll({
     where: {user: req.params.id},
     attributes: ['createdAt', 'updatedAt'],
     include: [
@@ -100,6 +100,7 @@ exports.showFavourite = async (req, res) => {
       },
     ],
   }).catch(res.send({
+    data: fav,
     message: 'file not exist'
   }))
   res.send(fav);
