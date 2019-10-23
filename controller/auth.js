@@ -21,9 +21,7 @@ exports.signIn = (req, res) => {
         message: 'wrong email or password',
       });
     }
-  }).catch(res.send({
-    message: 'input is not valid'
-  }))
+  })
 };
 //
 //Register
