@@ -14,6 +14,9 @@ module.exports = {
       genre: {
         type: Sequelize.STRING,
       },
+      description: {
+        type: Sequelize.STRING,
+      },
       fav_count: {
         type: Sequelize.INTEGER,
       },

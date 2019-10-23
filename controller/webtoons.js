@@ -16,7 +16,6 @@ exports.showAllToon = async (req, res) => {
         {
           model: users,
           as: 'createdBy',
-          attributes: ['name'],
         },
       ],
     });
@@ -27,7 +26,6 @@ exports.showAllToon = async (req, res) => {
         {
           model: users,
           as: 'createdBy',
-          attributes: ['name'],
         },
       ],
     });
@@ -48,7 +46,6 @@ exports.showEpisode = async (req, res) => {
       {
         model: webtoons,
         as: 'webToon',
-        attributes: ['title'],
       },
     ],
   });
@@ -64,7 +61,6 @@ exports.showEpImage = (req, res) => {
       images
         .findAll({
           where: {episode: eps.id},
-          attributes: ['page', 'image', 'createdAt', 'updatedAt'],
         })
         .then(result => res.send(result))
         //catch err of the second query
@@ -86,17 +82,14 @@ exports.showEpImage = (req, res) => {
 exports.showFavourite = async (req, res) => {
   const fav = await favourites.findAll({
     where: {user: req.params.id},
-    attributes: ['createdAt', 'updatedAt'],
     include: [
       {
         model: webtoons,
         as: 'webtoonId',
-        attributes: ['title', 'genre', 'image'],
       },
       {
         model: users,
         as: 'userId',
-        attributes: ['name'],
       },
     ],
   });
@@ -117,7 +110,6 @@ exports.myWebtoon = async (req, res) => {
     include: {
       model: users,
       as: 'createdBy',
-      attributes: ['name'],
     },
   });
   res.send(webtoon);
@@ -153,7 +145,6 @@ exports.showCreateWebtoon = (req, res) => {
       episodes
         .findAll({
           where: {webtoon: eps.id},
-          attributes: ['title', 'image', 'webtoon', 'createdAt', 'updatedAt'],
         })
         .then(result => res.send(result));
     });
@@ -234,11 +225,9 @@ exports.showEditEp = (req, res) => {
           images
             .findAll({
               where: {episode: img.id},
-              attributes: ['page', 'image', 'createdAt', 'updatedAt'],
               include: {
                 model: episodes,
                 as: 'epIsode',
-                attributes: ['title'],
               },
             })
             .then(result => res.send(result))
