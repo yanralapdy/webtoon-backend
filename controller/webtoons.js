@@ -91,7 +91,7 @@ exports.showFavourite = async (req, res) => {
       {
         model: webtoons,
         as: 'webtoonId',
-        attributes: ['title', 'genre', 'image'],
+        attributes: ['title', 'genre', 'image', 'cover'],
       },
       {
         model: users,
