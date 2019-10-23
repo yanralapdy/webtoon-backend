@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       description: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
       },
       fav_count: {
         type: Sequelize.INTEGER,
