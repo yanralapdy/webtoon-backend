@@ -12,7 +12,7 @@ exports.signIn = (req, res) => {
     if (user) {
       const token = 'Bearer ' + jwt.sign({userId: user.id}, secret);
       res.send({
-        username: user.name,
+        data: user,
         token,
       });
     } else {
@@ -37,7 +37,7 @@ exports.signUp = (req, res) => {
       User.create(req.body).then(item => {
         const token = 'Bearer ' + jwt.sign({userId: item.id}, secret);
         res.send({
-          username: item.name,
+          data: item,
           token,
         });
       });

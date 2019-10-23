@@ -17,6 +17,10 @@ module.exports = {
       name: {
         type: Sequelize.STRING,
       },
+      image: {
+        type: Sequelize.STRING,
+        defaultValue: 'https://p7.hiclipart.com/preview/858/581/271/user-computer-icons-system-chinese-wind-title-column.jpg',
+      },
       createdAt: {
         allowNull: false,
         type: 'TIMESTAMP',
