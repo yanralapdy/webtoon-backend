@@ -7,6 +7,8 @@ const favourites = models.favourites;
 const episodes = models.episodes;
 const images = models.images;
 
+//show all users
+
 //Webtoon
 exports.showAllToon = async (req, res) => {
   if (req.query.title) {
@@ -99,8 +101,7 @@ exports.showFavourite = async (req, res) => {
 //User
 exports.showAllUser = (req, res) => {
   users
-    .findAll({where: {id: req.params.id}, attributes: ['name']})
-    .then(result => res.send(result));
+    .findAll().then(result => res.send(result));
 };
 
 //MyWebtoon Menu
