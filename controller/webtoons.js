@@ -13,7 +13,7 @@ const images = models.images;
 exports.showAllToon = async (req, res) => {
   if (req.query.title) {
     const find = await webtoons.findAll({
-      where: {title: {[Op.like]: `%${req.query.title}%`}},
+      where: {title: {[Op.like]: `%${req.query.title}%`,[Op.like]: `${req.query.title}%`, [Op.like]: `%${req.query.title}`}},
       include: [
         {
           model: users,

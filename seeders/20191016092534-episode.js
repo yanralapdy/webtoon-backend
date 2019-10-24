@@ -40,19 +40,19 @@ module.exports = {
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/08/Perfect-half-title-correct.jpg',
+          'https://getmanhwa.com/wp-content/uploads/2019/08/Delivery-Knight-title.jpg',
         webtoon: 5,
       },
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/08/Delivery-Knight-title.jpg',
+          'https://getmanhwa.com/wp-content/uploads/2019/09/Love-square-title.png',
         webtoon: 6,
       },
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/09/Love-square-title.png',
+          'https://getmanhwa.com/wp-content/uploads/2019/07/Yuris-perfect-Married-life.jpg',
         webtoon: 7,
       },
       {
