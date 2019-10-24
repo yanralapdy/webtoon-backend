@@ -58,7 +58,7 @@ module.exports = {
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/07/Yuris-perfect-Married-life.jpg',
+          'https://getmanhwa.com/wp-content/uploads/2019/09/Raid-Title.jpg',
         webtoon: 8,
       },
     ]);
