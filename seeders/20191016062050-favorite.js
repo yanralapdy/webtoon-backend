@@ -30,10 +30,6 @@ module.exports = {
         webtoon: 6,
       },
       {
-        user: 1,
-        webtoon: 7,
-      },
-      {
         user: 2,
         webtoon: 1,
       },
@@ -44,10 +40,6 @@ module.exports = {
       {
         user: 2,
         webtoon: 5,
-      },
-      {
-        user: 2,
-        webtoon: 8,
       },
       {
         user: 2,
