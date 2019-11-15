@@ -16,50 +16,38 @@ module.exports = {
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/08/Perfect-half-title-correct.jpg',
+          'https://getmanhwa.co/wp-content/uploads/2019/10/Solo-Leveling-175x238.jpg',
         webtoon: 1,
       },
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/07/Solo-Leveling.jpg',
+          'https://getmanhwa.co/wp-content/uploads/2019/11/springtime-for-blossom-title-175x238.jpg',
         webtoon: 2,
       },
       {
         title: 'EP 1',
         image:
-          'http://postfiles3.naver.net/20160626_34/juderland_1466924213290Heosh_JPEG/%C1%A6%B8%F1re.jpg?type=w2',
+          'https://getmanhwa.co/wp-content/uploads/2019/11/Ashen-title-175x238.png',
         webtoon: 3,
       },
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/07/Devils-Descendants.jpg',
+          'https://getmanhwa.co/wp-content/uploads/2019/11/Broken-Melody-175x238.png',
         webtoon: 4,
       },
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/08/Delivery-Knight-title.jpg',
+          'https://getmanhwa.co/wp-content/uploads/2019/11/rugal-title1-175x238.png',
         webtoon: 5,
       },
       {
         title: 'EP 1',
         image:
-          'https://getmanhwa.com/wp-content/uploads/2019/09/Love-square-title.png',
+          'https://getmanhwa.co/wp-content/uploads/2019/11/Scone-sweet-title-175x238.jpg',
         webtoon: 6,
-      },
-      {
-        title: 'EP 1',
-        image:
-          'https://getmanhwa.com/wp-content/uploads/2019/07/Yuris-perfect-Married-life.jpg',
-        webtoon: 7,
-      },
-      {
-        title: 'EP 1',
-        image:
-          'https://getmanhwa.com/wp-content/uploads/2019/09/Raid-Title.jpg',
-        webtoon: 8,
       },
     ]);
   },
